@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>AARAMBH CLASSES</title>
@@ -18,6 +17,8 @@ font-family:Arial;
 background:#f4f6ff;
 }
 
+/* HEADER */
+
 header{
 background:black;
 color:white;
@@ -28,6 +29,8 @@ padding:20px;
 header img{
 width:120px;
 }
+
+/* NAVBAR */
 
 nav{
 background:linear-gradient(90deg,#ff512f,#dd2476);
@@ -46,6 +49,33 @@ nav a:hover{
 background:rgba(255,255,255,0.2);
 }
 
+/* SLIDER */
+
+.slider{
+height:420px;
+overflow:hidden;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+@keyframes slide{
+0%{margin-left:0}
+33%{margin-left:-100%}
+66%{margin-left:-200%}
+}
+
+/* SECTION */
+
 .section{
 padding:70px 20px;
 text-align:center;
@@ -54,7 +84,10 @@ text-align:center;
 .title{
 font-size:36px;
 margin-bottom:40px;
+color:#333;
 }
+
+/* GRID */
 
 .grid{
 display:grid;
@@ -64,6 +97,8 @@ max-width:1100px;
 margin:auto;
 }
 
+/* COURSE CARDS */
+
 .card{
 padding:35px;
 border-radius:15px;
@@ -71,16 +106,36 @@ color:white;
 transition:0.4s;
 }
 
+.card i{
+font-size:45px;
+margin-bottom:15px;
+}
+
 .card:hover{
 transform:translateY(-10px) scale(1.05);
 }
 
-.c1{background:linear-gradient(135deg,#ff9966,#ff5e62)}
-.c2{background:linear-gradient(135deg,#36d1dc,#5b86e5)}
-.c3{background:linear-gradient(135deg,#ff758c,#ff7eb3)}
-.c4{background:linear-gradient(135deg,#43cea2,#185a9d)}
-.c5{background:linear-gradient(135deg,#ffb347,#ffcc33)}
-.c6{background:linear-gradient(135deg,#7f00ff,#e100ff)}
+/* COLOURFUL COURSES */
+
+.c1{background:linear-gradient(135deg,#ff9966,#ff5e62);}
+.c2{background:linear-gradient(135deg,#36d1dc,#5b86e5);}
+.c3{background:linear-gradient(135deg,#ff758c,#ff7eb3);}
+.c4{background:linear-gradient(135deg,#43cea2,#185a9d);}
+.c5{background:linear-gradient(135deg,#ffb347,#ffcc33);}
+.c6{background:linear-gradient(135deg,#7f00ff,#e100ff);}
+
+/* BUTTON */
+
+.button{
+background:#ff9800;
+color:white;
+padding:14px 30px;
+border-radius:30px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* FOOTER */
 
 footer{
 background:#111;
@@ -108,13 +163,27 @@ padding:20px;
 <nav>
 
 <a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
 <a href="foundation.html">Foundation</a>
 <a href="neet-jee.html">NEET/JEE</a>
 <a href="cuet.html">CUET</a>
 <a href="gallery.html">Gallery</a>
+<a href="admission.html">Admission</a>
 <a href="contact.html">Contact</a>
 
 </nav>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="students.jpg">
+<img src="books.jpg">
+<img src="classroom.jpg">
+
+</div>
+
+</div>
 
 <section class="section">
 
@@ -123,34 +192,55 @@ padding:20px;
 <div class="grid">
 
 <div class="card c1">
+<i class="fas fa-school"></i>
 <h3>Class 1–10</h3>
 <p>All Subjects</p>
 </div>
 
 <div class="card c2">
+<i class="fas fa-user-graduate"></i>
 <h3>Class 11–12</h3>
 <p>Arts • Science • Commerce</p>
 </div>
 
 <div class="card c3">
+<i class="fas fa-atom"></i>
 <h3>Pre Foundation</h3>
-<p>Class 9–10</p>
+<p>Class 9–10 PCM + Biology</p>
 </div>
 
 <div class="card c4">
+<i class="fas fa-flask"></i>
 <h3>Foundation</h3>
-<p>Class 11–12</p>
+<p>Class 11–12 PCM + Biology</p>
 </div>
 
 <div class="card c5">
+<i class="fas fa-stethoscope"></i>
 <h3>NEET / IIT-JEE</h3>
+<p>Physics • Chemistry • Maths • Biology</p>
 </div>
 
 <div class="card c6">
+<i class="fas fa-university"></i>
 <h3>CUET</h3>
+<p>B.A • B.Sc • B.Com</p>
 </div>
 
 </div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Admissions Open 2026</h2>
+
+<a class="button"
+href="https://wa.me/918318819991">
+
+Apply Now
+
+</a>
 
 </section>
 
@@ -161,4 +251,4 @@ padding:20px;
 </footer>
 
 </body>
-</html>
+  </html>
