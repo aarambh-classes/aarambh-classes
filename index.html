@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
 body{
@@ -15,7 +17,7 @@ background:#f4f6fb;
 }
 
 header{
-background:#000;
+background:linear-gradient(90deg,#000428,#004e92);
 color:white;
 text-align:center;
 padding:20px;
@@ -61,22 +63,18 @@ object-fit:cover;
 }
 
 @keyframes slide{
-
 0%{margin-left:0}
-
 33%{margin-left:-100%}
-
 66%{margin-left:-200%}
-
 }
 
 .section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 .section h2{
-font-size:32px;
+font-size:34px;
 color:#0d47a1;
 margin-bottom:40px;
 }
@@ -90,17 +88,36 @@ margin:auto;
 }
 
 .card{
-background:linear-gradient(135deg,#1976d2,#42a5f5);
-color:white;
+background:white;
 padding:30px;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,0.2);
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 transition:0.3s;
 }
 
+.card i{
+font-size:40px;
+color:#1976d2;
+margin-bottom:15px;
+}
+
 .card:hover{
-transform:translateY(-8px);
-background:linear-gradient(135deg,#ff9800,#ffb74d);
+transform:translateY(-10px);
+background:linear-gradient(135deg,#1976d2,#42a5f5);
+color:white;
+}
+
+.card:hover i{
+color:white;
+}
+
+.button{
+background:#ff9800;
+color:white;
+padding:14px 30px;
+border-radius:6px;
+text-decoration:none;
+font-size:18px;
 }
 
 .gallery img{
@@ -108,15 +125,6 @@ width:250px;
 margin:10px;
 border-radius:10px;
 box-shadow:0 4px 12px rgba(0,0,0,0.2);
-}
-
-.button{
-background:#ff9800;
-color:white;
-padding:14px 28px;
-border-radius:6px;
-text-decoration:none;
-font-size:18px;
 }
 
 footer{
@@ -198,31 +206,37 @@ Apply for Admission
 <div class="grid">
 
 <div class="card">
+<i class="fas fa-book-open"></i>
 <h3>Class 1–8</h3>
 <p>All Subjects Coaching</p>
 </div>
 
 <div class="card">
+<i class="fas fa-calculator"></i>
 <h3>Class 9–10</h3>
 <p>Foundation Maths & Science</p>
 </div>
 
 <div class="card">
+<i class="fas fa-flask"></i>
 <h3>Class 11–12</h3>
 <p>Science | Commerce | Arts</p>
 </div>
 
 <div class="card">
+<i class="fas fa-atom"></i>
 <h3>IIT-JEE</h3>
 <p>Engineering Entrance Preparation</p>
 </div>
 
 <div class="card">
+<i class="fas fa-stethoscope"></i>
 <h3>NEET</h3>
 <p>Medical Entrance Preparation</p>
 </div>
 
 <div class="card">
+<i class="fas fa-graduation-cap"></i>
 <h3>CUET</h3>
 <p>B.A | B.Sc | B.Com Entrance</p>
 </div>
@@ -235,10 +249,29 @@ Apply for Admission
 
 <h2>Why Choose AARAMBH CLASSES</h2>
 
-<p>✔ Experienced Teachers</p>
-<p>✔ Small Batch Size</p>
-<p>✔ Regular Tests</p>
-<p>✔ Complete Study Material</p>
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-chalkboard-teacher"></i>
+<h3>Expert Teachers</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-users"></i>
+<h3>Small Batch Size</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-file-alt"></i>
+<h3>Regular Tests</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-book"></i>
+<h3>Study Material</h3>
+</div>
+
+</div>
 
 </div>
 
@@ -249,9 +282,7 @@ Apply for Admission
 <div class="gallery">
 
 <img src="students.jpg">
-
 <img src="books.jpg">
-
 <img src="classroom.jpg">
 
 </div>
@@ -266,7 +297,7 @@ Apply for Admission
 
 <a class="whatsapp" href="https://wa.me/918318819991">
 
-W
+<i class="fab fa-whatsapp"></i>
 
 </a>
 
