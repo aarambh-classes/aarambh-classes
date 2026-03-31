@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>AARAMBH CLASSES</title>
@@ -14,29 +15,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 body{
 margin:0;
 font-family:Arial;
-background:#f2f6ff;
+background:#f4f6ff;
 }
-
-/* HEADER */
 
 header{
 background:black;
+color:white;
 text-align:center;
 padding:20px;
-color:white;
 }
 
 header img{
 width:120px;
-background:black;
-padding:10px;
-border-radius:10px;
 }
 
-/* NAVIGATION */
-
 nav{
-background:linear-gradient(90deg,#4A00E0,#8E2DE2);
+background:linear-gradient(90deg,#ff512f,#dd2476);
 text-align:center;
 }
 
@@ -52,34 +46,6 @@ nav a:hover{
 background:rgba(255,255,255,0.2);
 }
 
-/* SLIDER */
-
-.slider{
-width:100%;
-height:420px;
-overflow:hidden;
-}
-
-.slides{
-display:flex;
-width:300%;
-animation:slide 12s infinite;
-}
-
-.slides img{
-width:100%;
-height:420px;
-object-fit:cover;
-}
-
-@keyframes slide{
-0%{margin-left:0}
-33%{margin-left:-100%}
-66%{margin-left:-200%}
-}
-
-/* SECTION */
-
 .section{
 padding:70px 20px;
 text-align:center;
@@ -87,11 +53,8 @@ text-align:center;
 
 .title{
 font-size:36px;
-color:#4A00E0;
 margin-bottom:40px;
 }
-
-/* GRID */
 
 .grid{
 display:grid;
@@ -101,71 +64,29 @@ max-width:1100px;
 margin:auto;
 }
 
-/* COURSE CARDS */
-
 .card{
-background:linear-gradient(135deg,#dfe9ff,#ffffff);
-padding:30px;
+padding:35px;
 border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
+color:white;
 transition:0.4s;
 }
 
-.card i{
-font-size:42px;
-color:#4A00E0;
-margin-bottom:15px;
-}
-
 .card:hover{
-background:linear-gradient(135deg,#98ffcc,#c8fff4);
-transform:translateY(-10px) scale(1.03);
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transform:translateY(-10px) scale(1.05);
 }
 
-/* BUTTON */
-
-.button{
-background:linear-gradient(45deg,#ff7b00,#ffb700);
-color:white;
-padding:14px 30px;
-border-radius:30px;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-}
-
-/* GALLERY */
-
-.gallery img{
-width:250px;
-margin:10px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* FOOTER */
+.c1{background:linear-gradient(135deg,#ff9966,#ff5e62)}
+.c2{background:linear-gradient(135deg,#36d1dc,#5b86e5)}
+.c3{background:linear-gradient(135deg,#ff758c,#ff7eb3)}
+.c4{background:linear-gradient(135deg,#43cea2,#185a9d)}
+.c5{background:linear-gradient(135deg,#ffb347,#ffcc33)}
+.c6{background:linear-gradient(135deg,#7f00ff,#e100ff)}
 
 footer{
 background:#111;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:16px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
 }
 
 </style>
@@ -186,38 +107,14 @@ text-decoration:none;
 
 <nav>
 
-<a href="#">Home</a>
-<a href="#">Courses</a>
-<a href="#">Gallery</a>
-<a href="#">Admission</a>
-<a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="foundation.html">Foundation</a>
+<a href="neet-jee.html">NEET/JEE</a>
+<a href="cuet.html">CUET</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
 
 </nav>
-
-<div class="slider">
-
-<div class="slides">
-
-<img src="students.jpg">
-<img src="books.jpg">
-<img src="classroom.jpg">
-
-</div>
-
-</div>
-
-<section class="section">
-
-<h2 class="title">Admissions Open 2026</h2>
-
-<a class="button"
-href="https://wa.me/918318819991">
-
-Apply for Admission
-
-</a>
-
-</section>
 
 <section class="section">
 
@@ -225,63 +122,33 @@ Apply for Admission
 
 <div class="grid">
 
-<div class="card">
-<i class="fas fa-book"></i>
-<h3>Class 1 – 10</h3>
+<div class="card c1">
+<h3>Class 1–10</h3>
 <p>All Subjects</p>
 </div>
 
-<div class="card">
-<i class="fas fa-graduation-cap"></i>
-<h3>Class 11 – 12</h3>
+<div class="card c2">
+<h3>Class 11–12</h3>
 <p>Arts • Science • Commerce</p>
 </div>
 
-<div class="card">
-<i class="fas fa-atom"></i>
+<div class="card c3">
 <h3>Pre Foundation</h3>
-<p>Class 9 & 10<br>
-Physics • Chemistry • Maths • Biology
-</p>
+<p>Class 9–10</p>
 </div>
 
-<div class="card">
-<i class="fas fa-flask"></i>
+<div class="card c4">
 <h3>Foundation</h3>
-<p>Class 11 & 12<br>
-Physics • Chemistry • Maths • Biology
-</p>
+<p>Class 11–12</p>
 </div>
 
-<div class="card">
-<i class="fas fa-stethoscope"></i>
+<div class="card c5">
 <h3>NEET / IIT-JEE</h3>
-<p>
-Physics • Chemistry • Maths • Biology
-</p>
 </div>
 
-<div class="card">
-<i class="fas fa-university"></i>
+<div class="card c6">
 <h3>CUET</h3>
-<p>
-Preparation for B.A • B.Sc • B.Com
-</p>
 </div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="title">Classroom Gallery</h2>
-
-<div class="gallery">
-
-<img src="students.jpg">
-<img src="books.jpg">
-<img src="classroom.jpg">
 
 </div>
 
@@ -293,12 +160,5 @@ Preparation for B.A • B.Sc • B.Com
 
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/918318819991">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
 </body>
-  </html>
+</html>
